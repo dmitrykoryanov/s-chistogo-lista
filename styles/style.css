@@ -133,7 +133,6 @@ a:active {
   flex-direction: row;
   width: 100%;
   color: #cccccc;
-  /*margin-bottom: 24px;*/
 }
 
 .reasons {
@@ -221,9 +220,6 @@ ul.how-to_list {
   margin-bottom: 8px;
   font-size: 16px;
   line-height: 21.6px;
-}
-
-.card_text {
 }
 
 .card_text_header {
