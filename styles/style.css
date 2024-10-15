@@ -21,6 +21,26 @@ blockquote {
   padding: 0;
 }
 
+.garamond_regular {
+  font-family: "EB GaramondR", serif;
+  font-weight: 400;
+}
+
+.garamond_medium {
+  font-family: "EB GaramondM", serif;
+  font-weight: 500;
+}
+
+.inter_regular {
+  font-family: "InterR", serif;
+  font-weight: 400;
+}
+
+.inter_medium {
+  font-family: "InterB", serif;
+  font-weight: 700;
+}
+
 .content-section {
   width: 360px;
   background-color: #1e1e1e;
@@ -41,7 +61,6 @@ blockquote {
 .header {
   display: flex;
   width: 360px;
-  height: 132px;
   padding: 24px 20px 24px 20px;
   justify-content: space-between;
 }
@@ -58,6 +77,7 @@ blockquote {
   flex-direction: column;
   justify-content: space-between;
   list-style: none;
+  gap: 11px;
 }
 
 .logo {
@@ -81,16 +101,21 @@ a:active {
   text-decoration: underline;
 }
 
+.cover_title {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-size: 72px;
+}
+
 .cover {
   display: flex;
   width: 100%;
   height: 221px;
-  flex-direction: column;
-  font-family: "EB Garamond Regular", serif;
-  font-size: 72px;
   padding-left: 20px;
   padding-top: 7px;
   line-height: 76px;
+  color: #ffffff;
 }
 
 .cover_image {
@@ -102,6 +127,10 @@ a:active {
   background-repeat: no-repeat;
   background-position: bottom;
   padding-right: 24px;
+}
+
+.cover_center {
+  align-self: flex-start;
 }
 
 .cover_center {
