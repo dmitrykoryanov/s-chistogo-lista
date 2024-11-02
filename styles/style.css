@@ -5,6 +5,8 @@
 body {
   margin: 0;
   background-color: #eee;
+  font-family: "Inter", serif;
+  font-weight: 400;
 }
 
 h1,
@@ -19,26 +21,6 @@ ol,
 blockquote {
   margin: 0;
   padding: 0;
-}
-
-.garamond_regular {
-  font-family: "EB GaramondR", serif;
-  font-weight: 400;
-}
-
-.garamond_medium {
-  font-family: "EB GaramondM", serif;
-  font-weight: 500;
-}
-
-.inter_regular {
-  font-family: "InterR", serif;
-  font-weight: 400;
-}
-
-.inter_medium {
-  font-family: "InterB", serif;
-  font-weight: 700;
 }
 
 .content-section {
@@ -83,11 +65,6 @@ blockquote {
 .logo {
   background-image: url("./../images/logo.svg");
   width: 79px;
-  height: 16px;
-}
-
-.active_link {
-  text-decoration: none;
 }
 
 a,
@@ -95,6 +72,11 @@ a:visited,
 a:hover,
 a:active {
   color: inherit;
+  text-decoration: none;
+}
+
+.bottom_border {
+  border-bottom: 1px solid currentColor;
 }
 
 .underlined {
@@ -106,12 +88,13 @@ a:active {
   width: 100%;
   flex-direction: column;
   font-size: 72px;
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
 }
 
 .cover {
   display: flex;
   width: 100%;
-  height: 221px;
   padding-left: 20px;
   padding-top: 7px;
   line-height: 76px;
@@ -137,23 +120,22 @@ a:active {
   margin: auto;
 }
 
-.cover_right {
+.elem_align_right {
   align-self: end;
 }
 
 .intro {
   display: flex;
   width: 100%;
-  height: 490px;
   padding: 30px 20px 37px 20px;
   margin-bottom: 37px;
   flex-direction: column;
 }
 
-.intro_article {
+.article_text {
   padding-top: 24px;
   color: #f5f5f5;
-  line-height: 21.6px;
+  line-height: 22px;
 }
 
 .header_intro {
@@ -164,23 +146,37 @@ a:active {
   color: #cccccc;
 }
 
+.header_intro_small_header {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #cccccc;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
 .reasons {
   display: flex;
   width: 100%;
-  height: 1368px;
   padding: 40px 20px 21px 20px;
   flex-direction: column;
   background-color: #fee42a;
   color: #131313;
 }
 
-.article_header {
-  font-size: 28px;
-  line-height: 32.2px;
+.flex_column {
+  display: flex;
+  flex-direction: column;
 }
 
-.article_header1 {
-  align-self: end;
+.article_header {
+  font-size: 28px;
+  line-height: 32px;
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
 }
 
 .reasons_article {
@@ -208,7 +204,6 @@ li.reasons_list {
 .how-to {
   display: flex;
   width: 100%;
-  height: 1749px;
   padding: 30px 20px 37px 20px;
   flex-direction: column;
   color: #f5f5f5;
@@ -229,6 +224,11 @@ ul.how-to_list {
   padding: 20px;
 }
 
+.card_title {
+  font-family: "Inter", serif;
+  font-weight: 700;
+}
+
 .card_autor {
   display: flex;
   flex-direction: column;
@@ -237,6 +237,7 @@ ul.how-to_list {
 .card_image {
   width: 100px;
   height: 100px;
+  border-radius: 50%;
 }
 
 .card_grey {
@@ -253,8 +254,10 @@ ul.how-to_list {
 
 .card_text_header {
   font-size: 22px;
-  line-height: 29.7px;
+  line-height: 30px;
   padding-bottom: 8px;
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
 }
 
 .yellow {
