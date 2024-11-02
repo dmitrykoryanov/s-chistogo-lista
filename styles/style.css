@@ -43,7 +43,7 @@ blockquote {
 .header {
   display: flex;
   width: 360px;
-  padding: 24px 20px 24px 20px;
+  padding: 24px 19px 24px 20px;
   justify-content: space-between;
 }
 
@@ -88,8 +88,11 @@ a:active {
   width: 100%;
   flex-direction: column;
   font-size: 72px;
+  line-height: 72px;
   font-family: "EB Garamond", serif;
   font-weight: 400;
+  padding-top: 2px;
+  padding-right: 24px;
 }
 
 .cover {
@@ -106,15 +109,12 @@ a:active {
   display: flex;
   flex-direction: column;
   background-image: url("./../images/cover.svg");
-  background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom;
-  padding-right: 24px;
+  background-position: bottom left;
 }
 
 .cover_center {
-  align-self: flex-start;
-  margin: auto;
+  align-self: center;
 }
 
 .elem_align_right {
@@ -125,14 +125,15 @@ a:active {
   display: flex;
   width: 100%;
   padding: 30px 20px 37px 20px;
-  margin-bottom: 37px;
+  /*margin-bottom: 37px;*/
   flex-direction: column;
 }
 
 .article_text {
   padding-top: 24px;
   color: #f5f5f5;
-  line-height: 22px;
+  line-height: 21.6px;
+  font-size: 16px;
 }
 
 .header_intro {
@@ -148,7 +149,7 @@ a:active {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #cccccc;
+  padding-top: 5px;
 }
 
 .nowrap {
@@ -158,7 +159,7 @@ a:active {
 .reasons {
   display: flex;
   width: 100%;
-  padding: 40px 20px 21px 20px;
+  padding: 40px 20px 23px 20px;
   flex-direction: column;
   background-color: #fee42a;
   color: #131313;
@@ -178,14 +179,16 @@ a:active {
 
 .reasons_article {
   font-size: 20px;
+  line-height: 27px;
   margin-top: 32px;
 }
 
 ul.reasons_list {
-  margin-top: 32px;
-  margin-left: 20px;
+  margin-top: 33px;
+  margin-left: 18px;
   font-size: 16px;
   line-height: 21.6px;
+  letter-spacing: -0.005em;
 }
 
 li.reasons_list {
@@ -201,7 +204,7 @@ li.reasons_list {
 .how-to {
   display: flex;
   width: 100%;
-  padding: 30px 20px 37px 20px;
+  padding: 40px 20px 58px 20px;
   flex-direction: column;
   color: #f5f5f5;
 }
@@ -209,6 +212,7 @@ li.reasons_list {
 .how-to_intro {
   margin-top: 32px;
   font-size: 20px;
+  line-height: 27px;
   margin-bottom: 32px;
 }
 
@@ -217,7 +221,7 @@ ul.how-to_list {
 }
 
 .card {
-  border-radius: 20px;
+  border-radius: 29px;
   padding: 20px;
 }
 
@@ -257,6 +261,11 @@ ul.how-to_list {
   font-weight: 500;
 }
 
+.card_text {
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
 .yellow {
   background-color: #fee42a;
   margin-top: 32px;
@@ -282,6 +291,6 @@ ul.how-to_list {
   font-size: 14px;
   line-height: 17.5px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 73px;
 }
